@@ -66,8 +66,9 @@ def analyze_terms():
         response = model.generate_content(prompt)
         result_text = (response.text or "").strip()
 
-        score_match = re.search(r"(?:score|safety score)\s*[:=]?\s*(\d{1,3})", result_text, re.IGNORECASE)
+        score_match = re.search(r"(\d{1,3})\s*/\s*100", result_text)
         score = int(score_match.group(1)) if score_match else None
+
 
         return jsonify({"score": score, "feedback": result_text}), 200
 

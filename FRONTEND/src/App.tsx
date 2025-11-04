@@ -78,7 +78,7 @@ const App: React.FC = () => {
       value={text}
       onChange={(e) => setText(e.target.value)}
       placeholder="Paste terms & conditions here..."
-      rows={10}
+      rows={10}   
       style={boxStyle} 
     />
 
