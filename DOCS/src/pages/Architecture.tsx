@@ -60,11 +60,11 @@ const Architecture = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 my-10 not-prose">
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h3 className="mt-0 text-base md:text-lg font-bold text-slate-900 mb-2">Strict Prompt Engineering</h3>
-            <p className="text-[11px] md:text-sm text-slate-600 mb-4">
+            <h3 className="mt-0 text-sm md:text-lg font-bold text-slate-900 mb-2">Strict Prompt Engineering</h3>
+            <p className="text-[10px] md:text-sm text-slate-600 mb-4">
               LLMs inherently want to be conversational. Our system prompt strictly enforces an output schema to ensure API reliability:
             </p>
-            <div className="bg-slate-900 text-green-400 p-3 md:p-4 rounded-lg text-[10px] md:text-xs font-mono overflow-x-auto shadow-inner">
+            <div className="bg-slate-900 text-green-400 p-3 md:p-4 rounded-lg text-[9px] md:text-xs font-mono overflow-x-auto shadow-inner">
               "Output in *exactly* this order:<br/>
               Safety Score: X/100<br/>
               Summary: [your one-line summary]<br/>
@@ -75,15 +75,15 @@ const Architecture = () => {
           </div>
           
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 md:p-6 shadow-sm">
-            <h3 className="mt-0 text-base md:text-lg font-bold text-slate-900 mb-2">Regex Score Extraction</h3>
-            <p className="text-[11px] md:text-sm text-slate-600 mb-4">
+            <h3 className="mt-0 text-sm md:text-lg font-bold text-slate-900 mb-2">Regex Score Extraction</h3>
+            <p className="text-[10px] md:text-sm text-slate-600 mb-4">
               Even with strict prompting, LLMs can hallucinate formatting. We use Regular Expressions to reliably extract the mathematical metric.
             </p>
             <div className="p-3 md:p-4 bg-primary-50 border border-primary-100 rounded-lg">
-              <code className="text-[10px] md:text-xs text-primary-700 font-bold block break-all">
+              <code className="text-[9px] md:text-xs text-primary-700 font-bold block break-all">
                 re.search(r'Safety Score:\s*(\d+)', ai_output)
               </code>
-              <p className="text-[10px] text-primary-600 mt-3 mb-0 italic">This ensures the core safety score is always successfully parsed.</p>
+              <p className="text-[9px] text-primary-600 mt-3 mb-0 italic">This ensures the core safety score is always successfully parsed.</p>
             </div>
           </div>
         </div>
