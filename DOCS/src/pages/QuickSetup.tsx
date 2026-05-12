@@ -14,20 +14,20 @@ const QuickSetup = () => {
         Download the pre-configured extension ZIP file. This version connects to a production backend hosted on Render.
       </p>
       <div className="not-prose my-8">
-        <div className="p-6 bg-white border border-slate-200 rounded flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="bg-slate-100 p-3 rounded">
-              <Rocket className="w-6 h-6 text-slate-900" />
+        <div className="p-4 md:p-6 bg-white border border-slate-200 rounded flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
+            <div className="bg-slate-100 p-2 md:p-3 rounded">
+              <Rocket className="w-5 h-5 md:w-6 md:h-6 text-slate-900" />
             </div>
-            <div>
-              <p className="text-sm font-bold text-slate-900">Production Extension Build</p>
-              <p className="text-xs text-slate-500 font-mono">esecure-extension-production.zip</p>
+            <div className="min-w-0">
+              <p className="text-sm font-bold text-slate-900 truncate">Production Build</p>
+              <p className="text-[10px] md:text-xs text-slate-500 font-mono truncate">esecure-extension-production.zip</p>
             </div>
           </div>
           <a 
             href="/esecure-extension-production.zip" 
             download 
-            className="w-full sm:w-auto text-center px-8 py-3 bg-black text-white text-sm font-bold rounded flex items-center justify-center gap-2"
+            className="w-full sm:w-auto text-center px-6 md:px-8 py-2.5 md:py-3 bg-black text-white text-xs md:text-sm font-bold rounded flex items-center justify-center gap-2"
           >
             <Download className="w-4 h-4" />
             Download ZIP

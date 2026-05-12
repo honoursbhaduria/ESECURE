@@ -52,7 +52,7 @@ const Architecture = () => {
         LLMs inherently want to be conversational ("Here is your analysis..."). For an API, conversational filler breaks JSON parsers 
         and ruins the UI. Our system prompt strictly enforces an output schema:
       </p>
-      <div className="bg-slate-900 text-green-400 p-4 rounded-lg text-sm font-mono mb-6 overflow-x-auto">
+      <div className="bg-slate-900 text-green-400 p-3 md:p-4 rounded-lg text-xs md:text-sm font-mono mb-6 overflow-x-auto whitespace-nowrap">
         "Output in *exactly* this order:<br/>
         Safety Score: X/100<br/>
         Summary: [your one-line summary]<br/>

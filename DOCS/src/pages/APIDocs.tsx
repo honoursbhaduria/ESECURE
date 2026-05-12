@@ -17,13 +17,13 @@ const APIDocs = () => {
           and automated URL scraping.
         </p>
 
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 md:p-6 mb-6">
           <h4 className="text-sm font-bold text-gray-500 uppercase mb-4">Request Structure</h4>
           <p className="mb-2"><strong>URL:</strong> <code>https://your-backend.onrender.com/analyze_terms</code></p>
           <p className="mb-4"><strong>Method:</strong> <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded text-xs font-bold">POST</span></p>
           
           <h5 className="font-bold mb-2">Required Headers:</h5>
-          <pre className="text-xs mb-6">
+          <pre className="text-xs mb-6 overflow-x-auto">
 {`{
   "Content-Type": "application/json",
   "X-Access-Token": "your_secure_token" // Validates extension identity
@@ -33,14 +33,14 @@ const APIDocs = () => {
           <h5 className="font-bold mb-2">Payload Options:</h5>
           <p className="text-sm mb-4">The API accepts two mutually exclusive fields:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-200 p-4 rounded">
+            <div className="bg-white border border-gray-200 p-3 md:p-4 rounded">
               <p className="font-bold text-blue-700 text-sm mb-2">Option A: URL Scraping</p>
-              <pre className="text-xs">{`{ "url": "https://site.com/terms" }`}</pre>
+              <pre className="text-xs overflow-x-auto">{`{ "url": "https://site.com/terms" }`}</pre>
               <p className="text-xs text-gray-500 mt-2 italic">Best for convenience. Scraped on-server.</p>
             </div>
-            <div className="bg-white border border-gray-200 p-4 rounded">
+            <div className="bg-white border border-gray-200 p-3 md:p-4 rounded">
               <p className="font-bold text-blue-700 text-sm mb-2">Option B: Direct Text</p>
-              <pre className="text-xs">{`{ "text": "The full T&C text..." }`}</pre>
+              <pre className="text-xs overflow-x-auto">{`{ "text": "The full T&C text..." }`}</pre>
               <p className="text-xs text-gray-500 mt-2 italic">Best for gated or complex login pages.</p>
             </div>
           </div>
@@ -55,7 +55,7 @@ const APIDocs = () => {
           computable data for the UI.
         </p>
 
-        <div className="bg-gray-900 text-white rounded-lg p-6 mb-8 overflow-x-auto">
+        <div className="bg-gray-900 text-white rounded-lg p-4 md:p-6 mb-8 overflow-x-auto">
           <h4 className="text-xs font-bold text-gray-400 uppercase mb-4">Sample JSON Response</h4>
           <pre className="text-sm text-green-400">
 {`{
@@ -88,12 +88,12 @@ const APIDocs = () => {
           Many AI implementations simply return a large block of text. We chose a 
           <strong> Hybrid JSON</strong> approach because it provides the best of both worlds:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-          <div className="p-4 bg-gray-50 border border-gray-200 rounded">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-6">
+          <div className="p-4 md:p-6 bg-gray-50 border border-gray-200 rounded">
             <h5 className="font-bold mb-2">Machine-Readable Score</h5>
             <p className="text-sm">Allows the extension to show progress bars, visual indicators, and quick-glance safety labels without the user reading a single word.</p>
           </div>
-          <div className="p-4 bg-gray-50 border border-gray-200 rounded">
+          <div className="p-4 md:p-6 bg-gray-50 border border-gray-200 rounded">
             <h5 className="font-bold mb-2">Rich AI Feedback</h5>
             <p className="text-sm">Provides the "Why" behind the score. By keeping this as a single string, we minimize latency and reduce parsing errors on the client side.</p>
           </div>
