@@ -2,10 +2,10 @@ import 'react';
 
 const Architecture = () => {
   return (
-    <article className="prose prose-slate max-w-none">
-      <div className="mb-8 md:mb-12">
+    <article className="prose prose-slate max-w-full overflow-hidden">
+      <div className="mb-6 md:mb-12">
         <h1 className="tracking-tight">Core Architecture & System Design</h1>
-        <p className="lead text-slate-600 border-l-4 border-primary-500 pl-4 md:pl-6 py-2 bg-slate-50/50 rounded-r-lg italic">
+        <p className="lead text-slate-600 border-l-4 border-primary-500 pl-3 md:pl-6 py-2 bg-slate-50/50 rounded-r-lg italic">
           This section provides an exhaustive technical breakdown of the ESECURE stack. We will examine the 
           rationale behind every library, the lifecycle of a request, and the specific algorithms employed to 
           extract, parse, and analyze legal text.

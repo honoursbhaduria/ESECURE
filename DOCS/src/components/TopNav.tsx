@@ -36,11 +36,11 @@ const TopNav = ({ onToggleSidebar }: TopNavProps) => {
           >
             <Menu className="w-6 h-6" />
           </button>
-          <span className="font-extrabold text-base md:text-lg tracking-tight text-slate-900">
+          <span className="font-extrabold text-xs md:text-lg tracking-tight text-slate-900 truncate">
             ESECURE <span className="hidden sm:inline">Docs</span>
           </span>
-          <span className="ml-2 px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold border border-slate-200 hidden md:inline-block">
-            v1.0.2
+          <span className="ml-1 px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold border border-slate-200 hidden md:inline-block">
+            v1.0.3
           </span>
           <button 
             onClick={() => setIsSearchOpen(true)}
