@@ -21,7 +21,7 @@ function App() {
         <div className="flex pt-16">
           <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
           <main className="flex-1 lg:ml-72 transition-all duration-300">
-            <div className="max-w-4xl mx-auto px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16">
+            <div className="max-w-6xl mx-auto px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16">
               <Routes>
                 <Route path="/" element={<Overview />} />
                 <Route path="/quick-setup" element={<QuickSetup />} />
@@ -33,8 +33,9 @@ function App() {
                 <Route path="/frontend-deployment" element={<FrontendDeployment />} />
               </Routes>
             </div>
-            
-            <footer className="max-w-4xl mx-auto px-6 pb-8 md:px-8 md:pb-12 lg:px-16 border-t border-slate-200 mt-16 pt-8 text-center text-sm text-slate-500 flex flex-col items-center">
+
+            <footer className="max-w-6xl mx-auto px-4 pb-8 md:px-8 md:pb-12 lg:px-16 border-t border-slate-200 mt-16 pt-8 text-center text-sm text-slate-500 flex flex-col items-center">
+
               <p className="mb-2">Designed with precision for the ESECURE project.</p>
               <div className="flex gap-4">
                 <span className="hover:text-slate-800 cursor-pointer transition-colors">Privacy</span>

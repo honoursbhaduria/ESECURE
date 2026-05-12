@@ -57,54 +57,57 @@ body {
   position: relative;
 }
 
-/* Nuclear Fluid Typography System */
+/* Balanced Fluid Typography System */
 .prose {
   max-width: 100% !important;
   width: 100% !important;
   overflow-wrap: break-word !important;
   word-wrap: break-word !important;
   word-break: break-word !important;
-  /* Extremely small base for tiny phones, scaling up slowly */
-  font-size: clamp(0.6875rem, 0.6rem + 0.4vw, 1.125rem) !important;
+  /* Aggressive mobile base (11px), scaling up to standard desktop (18px) */
+  font-size: clamp(0.6875rem, 0.4rem + 1.2vw, 1.125rem) !important;
   line-height: 1.6 !important;
 }
 
 .prose h1 {
-  font-size: clamp(1.1rem, 0.8rem + 2vw, 2.5rem) !important;
+  /* Mobile (18px) scaling to Desktop (48px) */
+  font-size: clamp(1.125rem, 0.5rem + 3vw, 3rem) !important;
   line-height: 1.1 !important;
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 1rem !important;
   letter-spacing: -0.02em !important;
   word-break: break-word !important;
 }
 
 .prose h2 {
-  font-size: clamp(1rem, 0.8rem + 1.5vw, 1.875rem) !important;
+  /* Mobile (16px) scaling to Desktop (36px) */
+  font-size: clamp(1rem, 0.5rem + 2vw, 2.25rem) !important;
   line-height: 1.2 !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.75rem !important;
   word-break: break-word !important;
 }
 
 .prose h3 {
-  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.5rem) !important;
+  /* Mobile (14px) scaling to Desktop (24px) */
+  font-size: clamp(0.875rem, 0.6rem + 1.5vw, 1.5rem) !important;
   line-height: 1.3 !important;
   word-break: break-word !important;
 }
 
 .prose .lead {
-  font-size: clamp(0.75rem, 0.65rem + 0.8vw, 1.25rem) !important;
-  line-height: 1.5 !important;
-  margin-bottom: 1.5rem !important;
+  font-size: clamp(0.8125rem, 0.6rem + 1.2vw, 1.25rem) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 2rem !important;
 }
 
-/* Ensure all containers are responsive */
+/* Ensure all containers are responsive but fill space on desktop */
 main, article, section, div {
   max-width: 100%;
 }
 
 @media (min-width: 1024px) {
   .prose {
-    max-width: 80ch !important;
+    max-width: 100% !important; /* Allow it to fill the max-w-5xl container */
   }
 }
 

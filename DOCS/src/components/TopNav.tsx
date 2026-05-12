@@ -40,7 +40,7 @@ const TopNav = ({ onToggleSidebar }: TopNavProps) => {
             ESECURE <span className="hidden sm:inline">Docs</span>
           </span>
           <span className="ml-1 px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold border border-slate-200 hidden md:inline-block">
-            v1.0.3
+            v1.0.4
           </span>
           <button 
             onClick={() => setIsSearchOpen(true)}
