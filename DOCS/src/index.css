@@ -47,12 +47,23 @@ html {
 /* Prose customizations for extreme polish */
 .prose {
   max-width: 100% !important;
+  font-size: 0.875rem; /* Equivalent to prose-sm for mobile */
+  line-height: 1.5;
 }
+
+@media (min-width: 640px) {
+  .prose {
+    font-size: 1rem; /* Equivalent to prose-base */
+  }
+}
+
 @media (min-width: 1024px) {
   .prose {
     max-width: 80ch !important;
+    font-size: 1.125rem; /* Equivalent to prose-lg */
   }
 }
+
 .prose pre {
   background-color: #0f172a !important; /* slate-900 */
   color: #f1f5f9 !important; /* slate-100 */
@@ -60,27 +71,31 @@ html {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   overflow-x: auto;
+  max-width: 100%;
 }
+
 .prose code {
   color: #2563eb;
   background-color: #eff6ff;
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   font-weight: 500;
-  word-break: break-word;
+  word-break: break-all; /* Aggressive break to prevent overflow */
 }
+
 .prose table {
   display: block;
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
 .prose a {
   color: #2563eb;
   text-decoration-line: none;
   font-weight: 500;
   transition: color 0.2s;
-  word-break: break-word;
+  word-break: break-all; /* Aggressive break for long URLs */
 }
 .prose a:hover {
   color: #1d4ed8;

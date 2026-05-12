@@ -3,7 +3,7 @@ import { Rocket, Download } from 'lucide-react';
 
 const QuickSetup = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>Quick Setup Guide</h1>
       <p className="mb-8">
         This guide is for users who want to use the ESECURE extension without setting up a local development environment.

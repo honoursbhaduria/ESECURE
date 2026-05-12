@@ -2,7 +2,7 @@ import 'react';
 
 const APIDocs = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>API Reference & Protocol</h1>
       
       <p className="mb-8 leading-relaxed text-lg">

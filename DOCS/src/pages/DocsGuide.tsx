@@ -1,6 +1,6 @@
 const DocsGuide = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>Documentation Engineering</h1>
       <p className="lead">
         This is an exhaustive meta-guide on how this exact documentation website is constructed, styled, and maintained. 

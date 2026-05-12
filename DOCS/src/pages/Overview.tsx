@@ -1,6 +1,6 @@
 const Overview = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>ESECURE Documentation</h1>
       <p className="lead">
         Welcome to the definitive guide for ESECURE, a cutting-edge, AI-driven legal analysis engine. 

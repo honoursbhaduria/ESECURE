@@ -2,7 +2,7 @@ import 'react';
 
 const Architecture = () => {
   return (
-    <article className="prose prose-slate prose-base md:prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <div className="mb-8 md:mb-12">
         <h1 className="mb-4 text-3xl md:text-4xl font-extrabold tracking-tight">Core Architecture & System Design</h1>
         <p className="lead text-slate-600 border-l-4 border-primary-500 pl-6 py-2 bg-slate-50/50 rounded-r-lg italic">

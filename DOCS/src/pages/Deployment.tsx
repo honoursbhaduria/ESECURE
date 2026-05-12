@@ -2,7 +2,7 @@ import 'react';
 
 const Deployment = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>Backend Deployment</h1>
       <p className="mb-8">
         Steps to deploy the ESECURE backend to Render for public access.

@@ -2,7 +2,7 @@ import 'react';
 
 const FrontendDeployment = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>Frontend Documentation Deployment</h1>
       <p className="lead">
         This documentation site is built as a React SPA. For the best experience, we recommend deploying to 

@@ -2,7 +2,7 @@ import 'react';
 
 const DeveloperGuide = () => {
   return (
-    <article className="prose prose-slate prose-lg max-w-none">
+    <article className="prose prose-slate max-w-none">
       <h1>Developer Setup Guide</h1>
       <p className="mb-8">
         Instructions for setting up ESECURE locally for development.
