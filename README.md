@@ -2,6 +2,32 @@
 
 ESECURE is a web application that analyzes **Terms and Conditions** text, providing a **human-readable summary**, highlighting **risky clauses**, and generating a **safety score** (0–100). It uses **Google Gemini AI** for analysis and consists of a Flask backend and a React frontend.
 
+## Documentation
+
+We have a dedicated documentation website built with React. You can find it in the `DOCS/` directory.
+
+### Running the Docs Locally
+
+1. Navigate to the docs folder:
+   ```bash
+   cd DOCS
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+
+### Documentation Sections
+
+- **Quick Setup:** For users who want to use the pre-built extension and hosted backend.
+- **Developer Guide:** Full local setup for both backend and frontend.
+- **API Reference:** Detailed request/response payloads for the Flask API.
+- **Deployment:** Guide on how to publish the backend to Render.
+
 ## Features
 
 - Analyze Terms & Conditions text with AI.
